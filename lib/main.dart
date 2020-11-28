@@ -1,3 +1,4 @@
+import 'package:cadastro_tarefas/pages/filtro_page.dart';
 import 'package:cadastro_tarefas/pages/lista_tarefas_page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,9 @@ class CadastroTarefasApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: ListaTarefasPage(),
+      routes: {
+        FiltroPage.ROUTE_NAME: (_) => FiltroPage(),
+      },
     );
   }
 }

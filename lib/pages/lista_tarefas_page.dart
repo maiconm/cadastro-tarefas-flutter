@@ -1,4 +1,5 @@
 import 'package:cadastro_tarefas/model/tarefa.dart';
+import 'package:cadastro_tarefas/pages/filtro_page.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -178,8 +179,11 @@ class _ListaTarefasPageState extends State<ListaTarefasPage> {
     );
   }
 
-  void _abrirPaginaFiltro() {
-    // TODO
+  void _abrirPaginaFiltro() async {
+    final alterouValores = await Navigator.of(context).pushNamed(FiltroPage.ROUTE_NAME);
+    if (alterouValores == true) {
+      // TODO
+    }
   }
 }
 
